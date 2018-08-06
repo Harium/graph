@@ -1,36 +1,36 @@
 package com.harium.storage.graph;
 
-public class GenericEdge <N> {
+public class GenericEdge<N> {
 
-	protected Node<N> origin;
-	
-	protected Node<N> destination;
-	
-	public GenericEdge(Node<N> origin, Node<N> destination) {
-		super();
-		
-		setOrigin(origin);
-		setDestination(destination);		
-	}
+    protected Node<N> origin;
 
-	public Node<N> getOrigin() {
-		return origin;
-	}
+    protected Node<N> destination;
 
-	public void setOrigin(Node<N> origin) {
-		this.origin = origin;
-	}
+    public GenericEdge(Node<N> origin, Node<N> destination) {
+        super();
 
-	public Node<N> getDestination() {
-		return destination;
-	}
+        setOrigin(origin);
+        setDestination(destination);
+    }
 
-	public void setDestination(Node<N> destination) {
-		this.destination = destination;
-		
-		if(destination == destination.getParent()) {
-			destination.setParent(origin);
-		}
-	}
-		
+    public Node<N> getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(Node<N> origin) {
+        this.origin = origin;
+    }
+
+    public Node<N> getDestination() {
+        return destination;
+    }
+
+    public void setDestination(Node<N> destination) {
+        this.destination = destination;
+
+        if (destination == destination.getParent()) {
+            destination.setParent(origin);
+        }
+    }
+
 }
