@@ -4,7 +4,7 @@ A simple graph library
 ## Maven
 ```xml
 <dependency>
-    <groupId>com.harium.graph</groupId>
+    <groupId>com.harium.storage</groupId>
     <artifactId>graph</artifactId>
     <version>1.0.0</version>
 </dependency>
