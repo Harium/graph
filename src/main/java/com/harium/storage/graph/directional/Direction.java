@@ -1,4 +1,4 @@
-package com.harium.graph.directional;
+package com.harium.storage.graph.directional;
 
 public enum Direction {
 

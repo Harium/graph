@@ -1,7 +1,7 @@
-package com.harium.graph.common;
+package com.harium.storage.graph.common;
 
-import com.harium.graph.Node;
-import com.harium.graph.WeightEdge;
+import com.harium.storage.graph.Node;
+import com.harium.storage.graph.WeightEdge;
 
 public class IntegerEdge extends WeightEdge<Integer> implements Comparable<IntegerEdge> {
 

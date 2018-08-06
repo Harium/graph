@@ -1,4 +1,4 @@
-package com.harium.graph;
+package com.harium.storage.graph;
 
 public class GenericEdge <N> {
 

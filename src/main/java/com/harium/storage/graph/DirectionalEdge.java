@@ -1,6 +1,6 @@
-package com.harium.graph;
+package com.harium.storage.graph;
 
-import com.harium.graph.directional.Direction;
+import com.harium.storage.graph.directional.Direction;
 
 
 public class DirectionalEdge<N> extends WeightEdge<N> {

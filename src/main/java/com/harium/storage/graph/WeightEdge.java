@@ -1,4 +1,4 @@
-package com.harium.graph;
+package com.harium.storage.graph;
 
 
 public class WeightEdge<N> extends GenericEdge<N> {
