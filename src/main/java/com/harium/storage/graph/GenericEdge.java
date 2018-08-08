@@ -3,7 +3,6 @@ package com.harium.storage.graph;
 public class GenericEdge<N> {
 
     protected Node<N> origin;
-
     protected Node<N> destination;
 
     public GenericEdge(Node<N> origin, Node<N> destination) {

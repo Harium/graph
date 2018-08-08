@@ -24,8 +24,9 @@ public class GenericGraph<T, E extends GenericEdge<T>> {
         this.nodes = nodes;
     }
 
-    public void addNode(Node<T> node) {
+    public Node<T>  addNode(Node<T> node) {
         this.nodes.add(node);
+        return node;
     }
 
     public Node<T> addNode(int index, Node<T> node) {
@@ -81,8 +82,9 @@ public class GenericGraph<T, E extends GenericEdge<T>> {
         this.edges = edges;
     }
 
-    public void addEdge(E edge) {
+    public E addEdge(E edge) {
         this.edges.add(edge);
+        return edge;
     }
 
     public void clear() {

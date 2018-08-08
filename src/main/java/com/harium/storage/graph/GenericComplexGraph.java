@@ -25,8 +25,9 @@ public abstract class GenericComplexGraph<N, E extends GenericEdge<N>> {
         this.nodes = nodes;
     }
 
-    public void addNode(Node<N> node) {
+    public Node<N> addNode(Node<N> node) {
         this.nodes.add(node);
+        return node;
     }
 
     public Map<Node<N>, List<E>> getAllEdges() {
@@ -56,7 +57,7 @@ public abstract class GenericComplexGraph<N, E extends GenericEdge<N>> {
         return new ArrayList<E>();
     }
 
-    public void addEdge(E edge) {
+    public E addEdge(E edge) {
 
         edges.add(edge);
         addNodesFromEdge(edge);
@@ -71,6 +72,8 @@ public abstract class GenericComplexGraph<N, E extends GenericEdge<N>> {
         if (!originEdges.contains(edge)) {
             edgesByNodes.get(origin).add(0, edge);
         }
+
+        return edge;
     }
 
     private void addNodesFromEdge(GenericEdge<N> edge) {
